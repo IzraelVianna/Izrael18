@@ -16,7 +16,7 @@ class app1 extends Component{
     return(
       <SafeAreaView style = {style.conteiner}>
   
-        <StatusBar backgroundColor ='#C79550' barStyle='light-content'>
+        <StatusBar backgroundColor ='#50C7C7' barStyle='light-content'>
           
           <View style ={Style.content} >
   
@@ -25,7 +25,14 @@ class app1 extends Component{
           </View>
           <View>
             <image Style = {Style.image}>
-              source ={require('./assets/image1')}
+              source ={require('./assets/image3')}
+            </image>
+            
+          </View>
+
+	    <View>
+            <image Style = {Style.image}>
+              source ={require('./assets/image4')}
             </image>
             
           </View>
@@ -33,7 +40,7 @@ class app1 extends Component{
   
           <TouchableOpacity style = {style.fab}>
   
-            <Ionicons name='check' size ='{30}'color ='#black'/>
+            <Ionicons name='' size =''color =''/>
           
           </TouchableOpacity>
   
@@ -52,13 +59,13 @@ class app1 extends Component{
       paddingBottom:10,
       fontSize: 25,
       textAlign:'center',
-      color:'#fff'
+      color:'white'
     },
     fab:{
       position:"absolute",
-      width: 60,
-      height: 60,
-      backgroundColor:'#C75052',
+      width: 30,
+      height: 30,
+      backgroundColor:'black',
       alignItems: 'center',
       justifyContent:'center',
       borderRadius:30,
@@ -75,10 +82,11 @@ class app1 extends Component{
       flex: 1,
       alignItems:'center',
       justifyContent:'center',
-      width:10,
-      height:10,
+      width:15,
+      height:15,
      }  
  })
 }
  
 export default app1;
+

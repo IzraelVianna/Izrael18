@@ -16,16 +16,16 @@ class app1 extends Component{
     return(
       <SafeAreaView style = {style.conteiner}>
   
-        <StatusBar backgroundColor ='#C79550' barStyle='light-content'>
+        <StatusBar backgroundColor ='#C75052' barStyle='light-content'>
           
           <View style ={Style.content} >
   
             <Text style = {style.Text}>tarefas</Text>
           
           </View>
-          <View>
+          *<View>
             <image Style = {Style.image}>
-              source ={require('./assets/image1')}
+              source ={require('./assets/image2')}
             </image>
             
           </View>
@@ -33,7 +33,7 @@ class app1 extends Component{
   
           <TouchableOpacity style = {style.fab}>
   
-            <Ionicons name='check' size ='{30}'color ='#black'/>
+            <Ionicons name='' size =''color =''/>
           
           </TouchableOpacity>
   
@@ -45,7 +45,7 @@ class app1 extends Component{
   const = Style = StyleSheet.create({
     conteiner:{
       flex:1,
-      backgroundColor: 'black'
+      backgroundColor: '#5056C7'
     },
     title:{
       marginTop:10,
@@ -56,9 +56,9 @@ class app1 extends Component{
     },
     fab:{
       position:"absolute",
-      width: 60,
-      height: 60,
-      backgroundColor:'#C75052',
+      width: 40,
+      height: 40,
+      backgroundColor:'black',
       alignItems: 'center',
       justifyContent:'center',
       borderRadius:30,
@@ -75,8 +75,8 @@ class app1 extends Component{
       flex: 1,
       alignItems:'center',
       justifyContent:'center',
-      width:10,
-      height:10,
+      width:14,
+      height:14,
      }  
  })
 }
